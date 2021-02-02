@@ -8,7 +8,7 @@ Scenario: CheckBrowser
 Scenario: FinishMe
 	When I start the browser
 	And I navigate to 'http://example.com'
-	And I click on the 'More information...'
-	Then a link with text 'RFC 2606' must be present
-	And a link with text 'RFC 6761' must be present
-	And the 'Domain Names' box must contain 'Root Zone Management' at index '2'
+	And I click on the More information
+	Then a link with text 'RFC 2606' must be present at '/html/body/div/div[1]/p[2]/a[1]'
+	Then a link with text 'RFC 6761' must be present at '/html/body/div/div[1]/p[2]/a[2]'
+	Then the 'Domain Names' box must contain 'Root Zone Management' at index '2'

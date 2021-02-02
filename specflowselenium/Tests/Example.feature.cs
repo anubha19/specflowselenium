@@ -118,13 +118,13 @@ this.ScenarioInitialize(scenarioInfo);
 #line 10
  testRunner.And("I navigate to \'http://example.com\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 11
- testRunner.And("I click on the \'More information...\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.And("I click on the More information", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
 #line 12
- testRunner.Then("a link with text \'RFC 2606\' must be present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
+ testRunner.Then("a link with text \'RFC 2606\' must be present at \'/html/body/div/div[1]/p[2]/a[1]\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 13
- testRunner.And("a link with text \'RFC 6761\' must be present", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("a link with text \'RFC 6761\' must be present at \'/html/body/div/div[1]/p[2]/a[2]\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line 14
- testRunner.And("the \'Domain Names\' box must contain \'Root Zone Management\' at index \'2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "And ");
+ testRunner.Then("the \'Domain Names\' box must contain \'Root Zone Management\' at index \'2\'", ((string)(null)), ((TechTalk.SpecFlow.Table)(null)), "Then ");
 #line hidden
             this.ScenarioCleanup();
         }
